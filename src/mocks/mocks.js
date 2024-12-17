@@ -172,10 +172,10 @@ const itemsCatalog = [
     text: 'TURANIUM Fabrika Rotary\n'
   },{
     id: 49,
-    text: 'UNI–CART\n'
+    text: 'UNI–CART'
   },{
     id: 50,
-    text: 'Vlad Blad\n'
+    text: 'Vlad Blad'
   },
 ]
 
