@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: #eeeeee;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh; /* Устанавливаем минимальную высоту экрана */
+    height: 100vh; /* Высота блока */
+    text-align: center;
+    box-sizing: border-box; /* Чтобы учитывать padding в расчет высоты */
+}
+
+main {
+    flex: 1; /* Оставляет место для футера внизу */
+}
+
+header {
+    background-color: #050402;
+    padding: 14px 0;
+}
+
+footer {
+    background-color: #050402;
+    text-align: center;
+    padding: 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+    /*border: 1px solid #888888;*/
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
