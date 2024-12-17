@@ -1,33 +1,14 @@
 <script setup>
+import {navItems} from "../mocks/mocks.js";
 
 </script>
 
 <template>
   <div class="header__nav">
     <ul class="header__nav-list">
-      <li class="header__nav-item">
-        <a href="javascript:void(0)" class="header__nav-link">
-          Промокоды
-        </a>
-      </li>
-      <li class="header__nav-item">
-        <a href="javascript:void(0)" class="header__nav-link">
-          Скидки
-        </a>
-      </li>
-      <li class="header__nav-item">
-        <a href="javascript:void(0)" class="header__nav-link">
-          Помощь
-        </a>
-      </li>
-      <li class="header__nav-item">
-        <a href="javascript:void(0)" class="header__nav-link">
-          О нас
-        </a>
-      </li>
-      <li class="header__nav-item">
-        <a href="javascript:void(0)" class="header__nav-link">
-          Контакты
+      <li v-for="item in navItems" :key="item.id" class="header__nav-item">
+        <a :href="item.href" class="header__nav-link">
+          {{ item.text }}
         </a>
       </li>
     </ul>
@@ -44,6 +25,7 @@
 
 .header__nav-item {
   font-size: 17px;
+  padding: 0 10px;
 }
 
 .header__nav-link {
