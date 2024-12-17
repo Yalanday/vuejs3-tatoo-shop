@@ -1,9 +1,23 @@
 <script setup>
+import { ref } from 'vue';
 
+// Реактивное состояние для отслеживания активности
+const isActive = ref(false);
+
+// Функция для переключения состояния
+const toggleActive = () => {
+  isActive.value = !isActive.value;
+};
 </script>
 
 <template>
-  <button class="burger-button" aria-label="Открыть меню">
+  <!-- Кнопка с динамическим классом -->
+  <button
+      class="burger-button"
+      :class="{ active: isActive }"
+      aria-label="Открыть меню"
+      @click="toggleActive"
+  >
     <span></span>
     <span></span>
     <span></span>
@@ -25,7 +39,6 @@
   outline: none;
 }
 
-
 .burger-button span {
   display: block;
   width: 100%;
@@ -35,9 +48,13 @@
   transition: all 0.3s ease-in-out; /* Плавный переход */
 }
 
+.burger-button:hover span {
+  background-color: #ffffff;
+}
+
 /* Анимация для активного состояния */
 .burger-button.active span:nth-child(1) {
-  transform: translateY(7.5px) rotate(45deg); /* Поворачиваем верхнюю линию */
+  transform: translateY(4.5px) rotate(45deg); /* Поворачиваем верхнюю линию */
 }
 
 .burger-button.active span:nth-child(2) {
@@ -47,5 +64,4 @@
 .burger-button.active span:nth-child(3) {
   transform: translateY(-7.5px) rotate(-45deg); /* Поворачиваем нижнюю линию */
 }
-
 </style>

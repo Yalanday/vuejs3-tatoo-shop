@@ -1,33 +1,14 @@
 <script setup>
+import {navItems} from "../mocks/mocks.js";
 
 </script>
 
 <template>
   <div class="footer__nav">
     <ul class="footer__nav-list">
-      <li class="footer__nav-item">
-        <a href="javascript:void(0)" class="footer__nav-link">
-          Промокоды
-        </a>
-      </li>
-      <li class="footer__nav-item">
-        <a href="javascript:void(0)" class="footer__nav-link">
-          Скидки
-        </a>
-      </li>
-      <li class="footer__nav-item">
-        <a href="javascript:void(0)" class="footer__nav-link">
-          Помощь
-        </a>
-      </li>
-      <li class="footer__nav-item">
-        <a href="javascript:void(0)" class="footer__nav-link">
-          О нас
-        </a>
-      </li>
-      <li class="footer__nav-item">
-        <a href="javascript:void(0)" class="footer__nav-link">
-          Контакты
+      <li v-for="item in navItems" :key="item.id" class="footer__nav-item">
+        <a :href="item.href" class="footer__nav-link">
+          {{ item.text }}
         </a>
       </li>
     </ul>

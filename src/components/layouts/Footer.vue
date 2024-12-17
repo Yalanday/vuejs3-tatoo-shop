@@ -61,6 +61,14 @@ import ContactsFooter from "../ContactsFooter.vue";
   margin-top: 50px;
 }
 
+.policy {
+  transition: all 0.3s ease-in-out;
+}
+
+.policy:hover {
+  color: #bb8c5f;
+}
+
 .footer__right {
   width: 40%;
   height: 100%;
