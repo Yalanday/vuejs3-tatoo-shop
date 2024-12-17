@@ -5,9 +5,9 @@
 <template>
   <div class="messengers">
     <ul class="messengers__list">
-      <li class="messengers__item"><span class="telegram"></span></li>
-      <li class="messengers__item"><span class="viber"></span></li>
-      <li class="messengers__item"><span class="wats-app"></span></li>
+      <li class="messengers__item" aria-label="telegram"><span class="telegram"></span></li>
+      <li class="messengers__item" aria-label="viber"><span class="viber"></span></li>
+      <li class="messengers__item" aria-label="whatsapp"><span class="wats-app"></span></li>
     </ul>
   </div>
 </template>

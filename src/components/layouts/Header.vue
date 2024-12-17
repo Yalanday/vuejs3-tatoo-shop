@@ -6,6 +6,13 @@ import IconsHeader from "../IconsHeader.vue";
 import CatalogMenuHeader from "../CatalogMenuHeader.vue";
 import Search from "../Search.vue";
 import NavHeader from "../NavHeader.vue";
+import CatalogMenu from "../CatalogMenu.vue";
+
+const showCatalogMenu = ref(false);
+
+const toggleCatalogMenu = () => {
+  showCatalogMenu.value = !showCatalogMenu.value;
+};
 
 </script>
 
@@ -15,15 +22,17 @@ import NavHeader from "../NavHeader.vue";
       <contacts-header class="header__contacts"/>
       <logo-header class="header__logo"/>
       <icons-header class="header__icons"/>
-      <catalog-menu-header class="header__catalog-menu"/>
+      <catalog-menu-header @toggle="toggleCatalogMenu" :isVisible="showCatalogMenu" class="header__catalog-menu"/>
       <search class="header__search" :items="['Apple', 'Banana', 'Cherry', 'Date', 'Fig', 'Grape']"/>
       <nav-header class="header__nav"/>
+      <catalog-menu v-show="showCatalogMenu" />
     </div>
   </header>
 </template>
 
 <style scoped>
 .header__container {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto;
