@@ -6,9 +6,13 @@ import {itemsCatalog} from "../mocks/mocks.js";
 
 <template>
   <div class="catalog-menu">
-<ul class="catalog-menu__list">
-  <li class="catalog-menu__item" v-for="item in itemsCatalog" :key="item.id">{{ item.text }}</li>
-</ul>
+    <ul class="catalog-menu__list">
+      <li class="catalog-menu__item" v-for="item in itemsCatalog" :key="item.id">
+        <a href="javascript:void(0)" class="catalog-menu__link">
+          {{ item.text }}
+        </a>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -34,7 +38,6 @@ import {itemsCatalog} from "../mocks/mocks.js";
   border-color: #ffffff transparent transparent transparent; /* Цвет треугольника */
 }
 
-
 .catalog-menu__list {
   column-count: 5; /* Количество колонок */
   column-gap: 5px; /* Расстояние между колонками */
@@ -46,5 +49,16 @@ import {itemsCatalog} from "../mocks/mocks.js";
 .catalog-menu__item {
   padding: 5px 0;
   color: #3E424B;
+}
+
+.catalog-menu__link {
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #ffffff;
+}
+
+.catalog-menu__link:hover {
+  color: #bb8c5f;
+  border-color: #bb8c5f;
+
 }
 </style>
