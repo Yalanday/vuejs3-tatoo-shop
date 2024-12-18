@@ -30,6 +30,7 @@ const handleToggle = () => {
 }
 
 .header__catalog-title {
+  font-family: 'Jost', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;

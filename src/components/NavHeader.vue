@@ -29,6 +29,7 @@ import {navItems} from "../mocks/mocks.js";
 }
 
 .header__nav-link {
+  font-family: "Jost", sans-serif;
   transition: all 0.3s ease-in-out;
 }
 
