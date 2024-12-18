@@ -1,4 +1,5 @@
 <script setup>
+import {defineProps, ref} from 'vue'
 import {Swiper, SwiperSlide} from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -7,22 +8,13 @@ import SvgHeart from "./SvgHeart.vue";
 
 const modules = [Pagination];
 
-const images = [
-  {
-    id: 1,
-    src: "../src/assets/cards/1.png",
-  },
-  {
-    id: 2,
-    src: "../src/assets/cards/1.png",
-  }, {
-    id: 3,
-    src: "../src/assets/cards/1.png",
-  }, {
-    id: 4,
-    src: "../src/assets/cards/1.png",
-  }
-]
+const props = defineProps({
+  favorite: Boolean,
+  new: Boolean,
+  card: Array
+})
+
+const isFavorite = ref(props.favorite);
 
 </script>
 
@@ -34,9 +26,9 @@ const images = [
                 dynamicBullets: true,
           }"
           :modules="modules" class="mySwiper">
-        <swiper-slide v-for="image in images" :key="image.id">
+        <swiper-slide v-for="image in card" :key="image.id">
           <img class="object-fill w-full h-96"
-               :src="image.src" alt="image slide 1"/>
+               :src="image.src" :alt="image.alt"/>
         </swiper-slide>
       </swiper>
     </div>
@@ -46,12 +38,12 @@ const images = [
       </h3>
       <span class="card__price">6 000 ₽ </span>
     </div>
-    <div class="card__label">
+    <div v-if="new" class="card__label">
       <span class="card__label-text">
           Новинка
       </span>
     </div>
-    <div class="card__favorites">
+    <div :class="{ active: isFavorite }" class="card__favorites" @click="isFavorite =!isFavorite">
       <svg-heart/>
     </div>
     <button class="card__button">
