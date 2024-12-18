@@ -1,9 +1,16 @@
 <script setup>
+import Hero from "../components/Hero.vue";
+import FilterHome from "../components/Filter-home.vue";
+
+
 </script>
 
 <template>
-  Блок Main
+  <hero/>
+  <filter-home/>
 </template>
 
 <style>
+
+
 </style>
