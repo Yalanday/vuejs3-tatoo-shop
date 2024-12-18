@@ -9,9 +9,8 @@ import Home from "./pages/Home.vue";
 <template>
   <Header/>
   <main>
-    <div class="container">
       <Home/>
-    </div>
+
   </main>
   <Footer/>
 </template>

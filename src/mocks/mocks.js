@@ -179,4 +179,23 @@ const itemsCatalog = [
   }
 ]
 
-export {navItems, itemsCatalog};
+const itemsFilter = [
+  {
+    id: 1,
+    text: "Хиты продаж"
+  },
+  {
+    id: 2,
+    text: "Самые популярные"
+  },
+  {
+    id: 3,
+    text: "Новые поступления"
+  },
+  {
+    id: 4,
+    text: "Акционные товары"
+  }
+]
+
+export {navItems, itemsCatalog, itemsFilter};
