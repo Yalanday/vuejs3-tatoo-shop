@@ -21,7 +21,7 @@ import {itemsFilter} from "../mocks/mocks.js";
 <style scoped>
 
 .main-filter {
-  margin-bottom: 40px;
+  margin-bottom: 120px;
 }
 
 .filter-list {
