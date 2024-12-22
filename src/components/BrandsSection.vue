@@ -1,6 +1,8 @@
 <script setup>
 import Title from './Title.vue'
 import BrandSlider from "./BrandSlider.vue";
+
+const direction = true;
 </script>
 
 <template>
@@ -8,8 +10,8 @@ import BrandSlider from "./BrandSlider.vue";
     <div class="main__brands__title">
       <Title title="Популярные бренды"/>
     </div>
-    <BrandSlider/>
-    <BrandSlider reverse-direction="false"/>
+    <BrandSlider :reverse-direction="direction"/>
+    <BrandSlider :reverse-direction="!direction"/>
   </div>
 </template>
 

@@ -15,7 +15,7 @@ export default {
   props: {
     reverseDirection: {
       type: Boolean,
-      default: false
+      default: true
     }
   },
   data() {
