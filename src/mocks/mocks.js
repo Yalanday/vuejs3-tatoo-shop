@@ -407,6 +407,58 @@ const cards = [
         id: 4
       }
     ]
+  },{
+    id: 9,
+    new: true,
+    favorite: true,
+    data: [
+      {
+        src: "../src/assets/cards/8.png",
+        alt: "Card image cap",
+        id: 1
+      },
+      {
+        src: "../src/assets/cards/6.png",
+        alt: "Card image cap",
+        id: 2
+      },
+      {
+        src: "../src/assets/cards/5.png",
+        alt: "Card image cap",
+        id: 3
+      },
+      {
+        src: "../src/assets/cards/2.png",
+        alt: "Card image cap",
+        id: 4
+      }
+    ]
+  },{
+    id: 10,
+    new: true,
+    favorite: true,
+    data: [
+      {
+        src: "../src/assets/cards/8.png",
+        alt: "Card image cap",
+        id: 1
+      },
+      {
+        src: "../src/assets/cards/6.png",
+        alt: "Card image cap",
+        id: 2
+      },
+      {
+        src: "../src/assets/cards/5.png",
+        alt: "Card image cap",
+        id: 3
+      },
+      {
+        src: "../src/assets/cards/2.png",
+        alt: "Card image cap",
+        id: 4
+      }
+    ]
   },
 ];
 
