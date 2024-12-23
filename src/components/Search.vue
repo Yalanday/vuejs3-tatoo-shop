@@ -98,6 +98,10 @@ export default {
 }
 
 .search__results {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  color: black;
   margin-top: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;

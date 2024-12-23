@@ -86,7 +86,7 @@ export default {
 </script>
 
 <template>
-  <div class="main__reviews reviews-main">
+  <section class="main__reviews reviews-main">
     <div class="reviews-main__title">
       <Title title="Отзывы"/>
       <swiper
@@ -122,7 +122,7 @@ export default {
 
       </swiper>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">

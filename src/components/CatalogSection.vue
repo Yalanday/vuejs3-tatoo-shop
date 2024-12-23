@@ -6,7 +6,7 @@ import {catalogItems} from "../mocks/mocks.js";
 </script>
 
 <template>
-  <div class="main__catalog container section-catalog">
+  <section class="main__catalog container section-catalog">
     <div class="section-catalog__title">
       <Title title="Каталог"/>
     </div>
@@ -23,7 +23,7 @@ import {catalogItems} from "../mocks/mocks.js";
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss">

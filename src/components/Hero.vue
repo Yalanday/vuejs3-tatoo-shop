@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="main__hero hero">
+  <section class="main__hero hero">
     <div class="container hero__container">
       <div class="hero__content">
         <h2 class="hero__title">Лучшие товары в мире татуировок</h2>
@@ -16,7 +16,7 @@
       </div>
     </div>
 
-  </div>
+  </section>
 </template>
 
 <style scoped>

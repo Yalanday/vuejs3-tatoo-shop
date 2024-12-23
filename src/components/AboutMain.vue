@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="main__about about-main">
+  <section class="main__about about-main">
     <div class="about-main__container">
       <img class="about-main__img" src="../assets/about-main-img.png" alt="">
       <div class="about-main__text">
@@ -20,7 +20,7 @@
         <button type="button" class="about-main__button">О комапании</button>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
