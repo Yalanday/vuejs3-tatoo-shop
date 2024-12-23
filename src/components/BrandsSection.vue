@@ -6,13 +6,13 @@ const direction = true;
 </script>
 
 <template>
-  <div class="main__brands brands-section container">
+  <section class="main__brands brands-section container">
     <div class="main__brands__title">
       <Title title="Популярные бренды"/>
     </div>
     <BrandSlider :reverse-direction="direction"/>
     <BrandSlider :reverse-direction="!direction"/>
-  </div>
+  </section>
 </template>
 
 <style scoped>

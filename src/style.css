@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -36,6 +38,19 @@ body {
     min-width: 320px;
     min-height: 100vh;
     background-color: #eeeeee;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Ширина скроллбара */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;  /* Цвет полосы */
+    border-radius: 10px;  /* Скругление углов */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;  /* Цвет фона скроллбара */
 }
 
 h1 {
@@ -92,6 +107,10 @@ footer {
 
 }
 
+section {
+    margin-bottom: 120px;
+}
+
 .container {
     width: 100%;
     max-width: 1216px;
@@ -129,3 +148,10 @@ a:hover {
     scale: 1.2;
 }
 
+.feedback-form .el-form-item__content {
+    margin-left: 0 !important; /* Переопределяем отступ */
+}
+
+.feedback-form .el-form-item__label {
+    justify-content: flex-start;
+}

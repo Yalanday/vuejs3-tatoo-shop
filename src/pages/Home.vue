@@ -6,7 +6,8 @@ import FullSizePromo from "../components/FullSizePromo.vue";
 import BrandsSection from "../components/BrandsSection.vue";
 import AboutMain from "../components/AboutMain.vue";
 import ReviewsMain from "../components/ReviewsMain.vue";
-
+import FormSubscription from "../components/FormSubscription.vue";
+import UpButton from "../components/UpButton.vue";
 </script>
 
 <template>
@@ -17,6 +18,8 @@ import ReviewsMain from "../components/ReviewsMain.vue";
   <brands-section/>
   <about-main/>
   <reviews-main/>
+  <FormSubscription/>
+  <up-button/>
 
 </template>
 

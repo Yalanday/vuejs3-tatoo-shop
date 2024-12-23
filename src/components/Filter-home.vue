@@ -6,7 +6,7 @@ import {itemsFilter} from "../mocks/mocks.js";
 </script>
 
 <template>
-  <div class="main__filter main-filter">
+  <section class="main__filter main-filter">
     <div class="container main-filter__container">
       <ul class="main-filter__list filter-list">
         <li v-for="item in itemsFilter" :key="item.id" class="filter-list__item">
@@ -15,7 +15,7 @@ import {itemsFilter} from "../mocks/mocks.js";
       </ul>
       <card-list/>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

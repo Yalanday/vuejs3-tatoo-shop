@@ -18,12 +18,12 @@ const fullSiceItems = [
 </script>
 
 <template>
-  <div class="full-size-promo">
+  <section class="full-size-promo">
     <div v-for="item in fullSiceItems" :key="item.id" class="full-size-promo-item" :style="{ 'background-image': `url(${item.image})`, alignItems: item.titlePosition }">
       <h3 class="full-size-promo-item-title" v-html="item.name"></h3>
       <a class="full-size-promo-item-link" href="javascrip:void(0)">Смотреть в каталоге</a>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
