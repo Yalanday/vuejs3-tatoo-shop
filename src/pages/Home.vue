@@ -5,6 +5,7 @@ import CatalogSection from "../components/CatalogSection.vue";
 import FullSizePromo from "../components/FullSizePromo.vue";
 import BrandsSection from "../components/BrandsSection.vue";
 import AboutMain from "../components/AboutMain.vue";
+import ReviewsMain from "../components/ReviewsMain.vue";
 
 </script>
 
@@ -15,6 +16,7 @@ import AboutMain from "../components/AboutMain.vue";
   <full-size-promo/>
   <brands-section/>
   <about-main/>
+  <reviews-main/>
 
 </template>
 

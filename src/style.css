@@ -113,10 +113,19 @@ a:hover {
     color: inherit;
 }
 
-.card__slider .swiper-pagination-bullet{
+
+
+.reviews-main .swiper-pagination-bullet
+{
+    padding: 2px;
     border-radius: 0;
+    background: none;
+    border: 1px solid #524336
 }
 
-.card__slider .swiper-pagination-bullet-active {
-    background-color: #524336;
+.reviews-main .swiper-pagination-bullet-active {
+    padding: 2px;
+    background: #BB8C5F;
+    scale: 1.2;
 }
+
