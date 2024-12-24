@@ -5,7 +5,7 @@
 <template>
   <section class="main__about about-main">
     <div class="about-main__container">
-      <img class="about-main__img" src="../assets/about-main-img.png" alt="">
+      <img class="about-main__img" src="/public/about-main-img.png" alt="">
       <div class="about-main__text">
         <h1 class="about-main__title">Тату магазин Mr. Driskell</h1>
         <p class="about-main__text-p">Приветствуем вас в Tattoo Mall — в нашем тату магазине собираются энтузиасты

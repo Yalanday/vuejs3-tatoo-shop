@@ -24,7 +24,7 @@
   width: 100%;
   height: 700px;
   position: relative;
-  background-image: url('../assets/baner.png');
+  background-image: url('/public/baner.png');
   background-position: center;
   background-size: cover;
   margin-bottom: 40px;

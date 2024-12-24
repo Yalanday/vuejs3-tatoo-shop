@@ -1,7 +1,7 @@
 <script setup>
 import Header from "./components/layouts/Header.vue";
 import Footer from "./components/layouts/Footer.vue";
-import {cards} from "./mocks/mocks.js";
+import {cards} from "@/mocks/mocks.js";
 import {useCartStore} from "./stores/cardsStore.js";
 import {onUnmounted, ref} from "vue";
 

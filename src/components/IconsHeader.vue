@@ -74,14 +74,14 @@ watch(
 }
 
 .icon-cart__bg {
-  -webkit-mask: url(../assets/icons/cart.svg) no-repeat center;
-  mask: url(../assets/icons/cart.svg) no-repeat center;
+  -webkit-mask: url(/public/icons/cart.svg) no-repeat center;
+  mask: url(/public/icons/cart.svg) no-repeat center;
 }
 
 .icon-favorites__bg {
 
-  -webkit-mask: url(../assets/icons/favorites.svg) no-repeat center;
-  mask: url(../assets/icons/favorites.svg) no-repeat center;
+  -webkit-mask: url(/public/icons/favorites.svg) no-repeat center;
+  mask: url(/public/icons/favorites.svg) no-repeat center;
 }
 
 .icon-favorites {
@@ -105,8 +105,8 @@ watch(
 }
 
 .icon-user__bg {
-  -webkit-mask: url(../assets/icons/user.svg) no-repeat center;
-  mask: url(../assets/icons/user.svg) no-repeat center;
+  -webkit-mask: url(/public/icons/user.svg) no-repeat center;
+  mask: url(/public/icons/user.svg) no-repeat center;
 }
 
 .icon-cart {

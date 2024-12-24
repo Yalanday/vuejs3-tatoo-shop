@@ -47,18 +47,18 @@
 }
 
 .telegram {
-  -webkit-mask: url('../assets/icons/telegram.svg') no-repeat center;
-  mask: url('../assets/icons/telegram.svg') no-repeat center;
+  -webkit-mask: url('/icons/telegram.svg') no-repeat center;
+  mask: url('/icons/telegram.svg') no-repeat center;
 }
 
 .viber {
-  -webkit-mask: url('../assets/icons/viber.svg') no-repeat center;
-  mask: url('../assets/icons/viber.svg') no-repeat center;
+  -webkit-mask: url('/icons/viber.svg') no-repeat center;
+  mask: url('/icons/viber.svg') no-repeat center;
 }
 
 .wats-app {
-  -webkit-mask: url('../assets/icons/watsapp.svg') no-repeat center;
-  mask: url('../assets/icons/watsapp.svg') no-repeat center;
+  -webkit-mask: url('/icons/watsapp.svg') no-repeat center;
+  mask: url('/icons/watsapp.svg') no-repeat center;
 }
 
 

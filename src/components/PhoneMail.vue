@@ -48,13 +48,13 @@ const props = defineProps({
 
 .header-phone::before,
 .footer-phone::before{
-  -webkit-mask: url('../assets/icons/call.svg') no-repeat center;
-  mask: url('../assets/icons/call.svg') no-repeat center;
+  -webkit-mask: url('/icons/call.svg') no-repeat center;
+  mask: url('/icons/call.svg') no-repeat center;
 }
 
 .header-email::before,
 .footer-email::before{
-  -webkit-mask: url('../assets/icons/mail.svg') no-repeat center;
-  mask: url('../assets/icons/mail.svg') no-repeat center;
+  -webkit-mask: url('/icons/mail.svg') no-repeat center;
+  mask: url('/icons/mail.svg') no-repeat center;
 }
 </style>
