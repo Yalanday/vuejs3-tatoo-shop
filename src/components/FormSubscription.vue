@@ -110,7 +110,7 @@ const onReset = () => {
         </div>
       </div>
       <div class="form-subscription__right">
-        <img src="/src/assets/form-img.png" alt="subscribe" class="subscribe-img">
+        <img src="/public/form-img.png" alt="subscribe" class="subscribe-img">
       </div>
 
     </div>

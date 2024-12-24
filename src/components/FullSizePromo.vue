@@ -4,13 +4,13 @@ const fullSiceItems = [
   {
     id: 1,
     name: 'Краски Lip Nitn',
-    image: './src/assets/promo-1.png',
+    image: '/promo-1.png',
     titlePosition: 'center'
   },
   {
     id: 2,
     name: 'Foxx viper — <br> хит 2021 года',
-    image: './src/assets/promo-2.png',
+    image: '/promo-2.png',
     titlePosition: 'flex-start'
   },
 ]

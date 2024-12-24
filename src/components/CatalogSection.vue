@@ -1,7 +1,8 @@
 <script setup>
 import Title from "./Title.vue";
-import {catalogItems} from "../mocks/mocks.js";
+import {catalogItems} from "@/mocks/mocks.js";
 
+console.log(catalogItems)
 
 </script>
 

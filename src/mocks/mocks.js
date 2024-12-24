@@ -209,22 +209,22 @@ const cards = [
     quantitu: 1,
     data: [
       {
-        src: "../src/assets/cards/1.png",
+        src: " /cards/1.png",
         alt: "Card image cap",
         id: 1,
       },
       {
-        src: "../src/assets/cards/7.png",
+        src: " /cards/7.png",
         alt: "Card image cap",
         id: 2,
       },
       {
-        src: "../src/assets/cards/5.png",
+        src: " /cards/5.png",
         alt: "Card image cap",
         id: 3,
       },
       {
-        src: "../src/assets/cards/8.png",
+        src: " /cards/8.png",
         alt: "Card image cap",
         id: 4,
       }
@@ -239,22 +239,22 @@ const cards = [
     quantitu: 0,
     data: [
       {
-        src: "../src/assets/cards/2.png",
+        src: " /cards/2.png",
         alt: "Card image cap",
         id: 1,
       },
       {
-        src: "../src/assets/cards/5.png",
+        src: " /cards/5.png",
         alt: "Card image cap",
         id: 2
       },
       {
-        src: "../src/assets/cards/1.png",
+        src: " /cards/1.png",
         alt: "Card image cap",
         id: 3
       },
       {
-        src: "../src/assets/cards/6.png",
+        src: " /cards/6.png",
         alt: "Card image cap",
         id: 4
       }
@@ -269,22 +269,22 @@ const cards = [
     quantitu: 0,
     data: [
       {
-        src: "../src/assets/cards/5.png",
+        src: "/cards/5.png",
         alt: "Card image cap",
         id: 1
       },
       {
-        src: "../src/assets/cards/6.png",
+        src: "/cards/6.png",
         alt: "Card image cap",
         id: 2
       },
       {
-        src: "../src/assets/cards/7.png",
+        src: "/cards/7.png",
         alt: "Card image cap",
         id: 3
       },
       {
-        src: "../src/assets/cards/8.png",
+        src: "/cards/8.png",
         alt: "Card image cap",
         id: 4
       }
@@ -299,22 +299,22 @@ const cards = [
     quantitu: 0,
     data: [
       {
-        src: "../src/assets/cards/1.png",
+        src: "/cards/1.png",
         alt: "Card image cap",
         id: 1
       },
       {
-        src: "../src/assets/cards/5.png",
+        src: "/cards/5.png",
         alt: "Card image cap",
         id: 2
       },
       {
-        src: "../src/assets/cards/6.png",
+        src: "/cards/6.png",
         alt: "Card image cap",
         id: 3
       },
       {
-        src: "../src/assets/cards/2.png",
+        src: "/cards/2.png",
         alt: "Card image cap",
         id: 4
       }
@@ -329,22 +329,22 @@ const cards = [
     quantitu: 0,
     data: [
       {
-        src: "../src/assets/cards/5.png",
+        src: "/cards/5.png",
         alt: "Card image cap",
         id: 1
       },
       {
-        src: "../src/assets/cards/1.png",
+        src: "/cards/1.png",
         alt: "Card image cap",
         id: 2
       },
       {
-        src: "../src/assets/cards/2.png",
+        src: "/cards/2.png",
         alt: "Card image cap",
         id: 3
       },
       {
-        src: "../src/assets/cards/7.png",
+        src: "/cards/7.png",
         alt: "Card image cap",
         id: 4
       }
@@ -359,22 +359,22 @@ const cards = [
     quantitu: 0,
     data: [
       {
-        src: "../src/assets/cards/6.png",
+        src: "/cards/6.png",
         alt: "Card image cap",
         id: 1
       },
       {
-        src: "../src/assets/cards/8.png",
+        src: "/cards/8.png",
         alt: "Card image cap",
         id: 2
       },
       {
-        src: "../src/assets/cards/7.png",
+        src: "/cards/7.png",
         alt: "Card image cap",
         id: 3
       },
       {
-        src: "../src/assets/cards/1.png",
+        src: "/cards/1.png",
         alt: "Card image cap",
         id: 4
       }
@@ -389,22 +389,22 @@ const cards = [
     quantitu: 0,
     data: [
       {
-        src: "../src/assets/cards/7.png",
+        src: "/cards/7.png",
         alt: "Card image cap",
         id: 1
       },
       {
-        src: "../src/assets/cards/1.png",
+        src: "/cards/1.png",
         alt: "Card image cap",
         id: 2
       },
       {
-        src: "../src/assets/cards/2.png",
+        src: "/cards/2.png",
         alt: "Card image cap",
         id: 3
       },
       {
-        src: "../src/assets/cards/5.png",
+        src: "/cards/5.png",
         alt: "Card image cap",
         id: 4
       }
@@ -419,22 +419,22 @@ const cards = [
     quantitu: 0,
     data: [
       {
-        src: "../src/assets/cards/8.png",
+        src: "/cards/8.png",
         alt: "Card image cap",
         id: 1
       },
       {
-        src: "../src/assets/cards/6.png",
+        src: "/cards/6.png",
         alt: "Card image cap",
         id: 2
       },
       {
-        src: "../src/assets/cards/5.png",
+        src: "/cards/5.png",
         alt: "Card image cap",
         id: 3
       },
       {
-        src: "../src/assets/cards/2.png",
+        src: "/cards/2.png",
         alt: "Card image cap",
         id: 4
       }
@@ -449,22 +449,22 @@ const cards = [
     quantitu: 0,
     data: [
       {
-        src: "../src/assets/cards/8.png",
+        src: "/cards/8.png",
         alt: "Card image cap",
         id: 1
       },
       {
-        src: "../src/assets/cards/6.png",
+        src: "/cards/6.png",
         alt: "Card image cap",
         id: 2
       },
       {
-        src: "../src/assets/cards/5.png",
+        src: "/cards/5.png",
         alt: "Card image cap",
         id: 3
       },
       {
-        src: "../src/assets/cards/2.png",
+        src: "/cards/2.png",
         alt: "Card image cap",
         id: 4
       }
@@ -479,22 +479,22 @@ const cards = [
     quantitu: 0,
     data: [
       {
-        src: "../src/assets/cards/8.png",
+        src: '/cards/8.png',
         alt: "Card image cap",
         id: 1
       },
       {
-        src: "../src/assets/cards/6.png",
+        src: "/cards/6.png",
         alt: "Card image cap",
         id: 2
       },
       {
-        src: "../src/assets/cards/5.png",
+        src: "/cards/5.png",
         alt: "Card image cap",
         id: 3
       },
       {
-        src: "../src/assets/cards/2.png",
+        src: "/cards/2.png",
         alt: "Card image cap",
         id: 4
       }
@@ -506,67 +506,67 @@ const catalogItems = [
   {
     id: 1,
     title: "Тату </br> наборы",
-    url: "./src/assets/catalog/1.jpg",
+    url: "/catalog/1.jpg",
     class: 'section-catalog__item--medium'
   },
   {
     id: 2,
     title: "Держатели",
-    url: "./src/assets/catalog/2.jpg",
+    url: "/catalog/2.jpg",
     class: 'section-catalog__item--big'
   },
   {
     id: 3,
     title: "Тату машинка",
-    url: "./src/assets/catalog/3.jpg",
+    url: "/catalog/3.jpg",
     class: 'section-catalog__item--small'
   },
   {
     id: 4,
     title: "Педали </br> и провода",
-    url: "./src/assets/catalog/4.jpg",
+    url: "/catalog/4.jpg",
     class: 'section-catalog__item--medium'
   },
   {
     id: 5,
     title: "Краски",
-    url: "./src/assets/catalog/5.png",
+    url: "/catalog/5.png",
     class: 'section-catalog__item--small'
   },
   {
     id: 6,
     title: "Блоки питания",
-    url: "./src/assets/catalog/6.jpg",
+    url: "/catalog/6.jpg",
     class: 'section-catalog__item--medium'
   },
   {
     id: 7,
     title: "Наконечники",
-    url: "./src/assets/catalog/7.jpg",
+    url: "/catalog/7.jpg",
     class: 'section-catalog__item--small'
   },
   {
     id: 8,
     title: "Тату иглы",
-    url: "./src/assets/catalog/8.jpg",
+    url: "/catalog/8.jpg",
     class: 'section-catalog__item--small'
   },
   {
     id: 9,
     title: "Защита, ёмкости, </br> расходники",
-    url: "./src/assets/catalog/9.jpg",
+    url: "/catalog/9.jpg",
     class: 'section-catalog__item--small'
   },
   {
     id: 10,
     title: "Аксессуары",
-    url: "./src/assets/catalog/10.jpg",
+    url: "/catalog/10.jpg",
     class: 'section-catalog__item--small'
   },
   {
     id: 11,
     title: "Принтеры и планшеты",
-    url: "./src/assets/catalog/11.jpg",
+    url: "/catalog/11.jpg",
     class: 'section-catalog__item--medium'
   }
 ]
