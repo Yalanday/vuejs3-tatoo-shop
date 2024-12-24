@@ -1,7 +1,11 @@
 <script setup>
-import { ref } from 'vue';
+import {onUnmounted, ref} from 'vue';
 import Card from './Card.vue';
-import { cards } from "../mocks/mocks.js";
+
+import {useCartStore} from "../stores/cardsStore.js";
+
+const store = useCartStore()
+const cards = ref(store.cards)
 
 // Изначально отображаем только 8 элементов
 const visibleCards = ref(8);
@@ -10,15 +14,24 @@ const visibleCards = ref(8);
 const showMore = () => {
   visibleCards.value += 8; // Показываем ещё 8 элементов
 };
+
+// const countFavorites = cards.filter(card => card.favorite).length;
+
 </script>
+
+
 
 <template>
   <div class="cards">
     <card
         v-for="card in cards.slice(0, visibleCards)"
         :key="card.id"
+        :id="card.id"
+        :incart="card.incart"
         :favorite="card.favorite"
         :new="card.new"
+        :title="card.title"
+        :price="card.price"
         :card="card.data"
     />
   </div>

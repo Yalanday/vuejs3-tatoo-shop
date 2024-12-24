@@ -203,6 +203,10 @@ const cards = [
     id: 1,
     new: false,
     favorite: true,
+    title: 'Foxxx Kitsune Mini Black Vintage RCA',
+    price: 6000,
+    incart: true,
+    quantitu: 1,
     data: [
       {
         src: "../src/assets/cards/1.png",
@@ -229,6 +233,10 @@ const cards = [
     id: 2,
     new: false,
     favorite: false,
+    title: 'Foxxx Viper Fox Golden Vintage Lot #1 RCA',
+    price: 7500,
+    incart: false,
+    quantitu: 0,
     data: [
       {
         src: "../src/assets/cards/2.png",
@@ -255,6 +263,10 @@ const cards = [
     id: 3,
     new: true,
     favorite: false,
+    title: 'Нитровиниловые перчатки Wally Plastic S',
+    price: 6312,
+    incart: false,
+    quantitu: 0,
     data: [
       {
         src: "../src/assets/cards/5.png",
@@ -281,6 +293,10 @@ const cards = [
     id: 4,
     new: false,
     favorite: true,
+    title: 'Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий',
+    price: 25456,
+    incart: false,
+    quantitu: 0,
     data: [
       {
         src: "../src/assets/cards/1.png",
@@ -307,6 +323,10 @@ const cards = [
     id: 5,
     new: false,
     favorite: false,
+    title: 'Verge Direct 2.1 Pink gip EGO 4 mm liners',
+    price: 6000,
+    incart: false,
+    quantitu: 0,
     data: [
       {
         src: "../src/assets/cards/5.png",
@@ -333,6 +353,10 @@ const cards = [
     id: 6,
     new: false,
     favorite: false,
+    title: 'Deuce Machines Direct Drive #7 RCA Samurai',
+    price: 2000,
+    incart: false,
+    quantitu: 0,
     data: [
       {
         src: "../src/assets/cards/6.png",
@@ -359,6 +383,10 @@ const cards = [
     id: 7,
     new: false,
     favorite: false,
+    title: 'Cyborg Machines Alter Rotary Axis Cross Sexy Nymph',
+    price: 666000,
+    incart: false,
+    quantitu: 0,
     data: [
       {
         src: "../src/assets/cards/7.png",
@@ -385,6 +413,10 @@ const cards = [
     id: 8,
     new: true,
     favorite: true,
+    title: 'Verge Direct 2.1 Gunmetal',
+    price: 13000,
+    incart: false,
+    quantitu: 0,
     data: [
       {
         src: "../src/assets/cards/8.png",
@@ -411,6 +443,10 @@ const cards = [
     id: 9,
     new: true,
     favorite: true,
+    title: 'Verge Direct 2.1 Gunmetal',
+    price: 9000,
+    incart: false,
+    quantitu: 0,
     data: [
       {
         src: "../src/assets/cards/8.png",
@@ -437,6 +473,10 @@ const cards = [
     id: 10,
     new: true,
     favorite: true,
+    title: 'Verge Direct 2.1 Gunmetal',
+    price: 10000,
+    incart: false,
+    quantitu: 0,
     data: [
       {
         src: "../src/assets/cards/8.png",

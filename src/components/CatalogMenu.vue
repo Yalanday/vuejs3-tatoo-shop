@@ -23,6 +23,7 @@ import {itemsCatalog} from "../mocks/mocks.js";
   position: absolute;
   background-color: #ffffff;
   padding: 40px 50px;
+  z-index: 100;
 }
 
 .catalog-menu::before {

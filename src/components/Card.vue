@@ -1,20 +1,60 @@
 <script setup>
-import {defineProps, ref} from 'vue'
+import {defineProps, ref, watch} from 'vue'
 import {Swiper, SwiperSlide} from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
 import {Pagination} from "swiper/modules";
 import SvgHeart from "./SvgHeart.vue";
+import {useCartStore} from "../stores/cardsStore.js";
 
 const modules = [Pagination];
 
 const props = defineProps({
   favorite: Boolean,
   new: Boolean,
-  card: Array
+  title: String,
+  price: Number,
+  card: Array,
+  id: Number,
+  incart: Boolean,
 })
 
 const isFavorite = ref(props.favorite);
+const inCart = ref(props.incart);
+
+function formatPrice(price) {
+  if (price >= 1000) {
+    return price.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');  // Добавляет пробел перед последними тремя цифрами
+  }
+  return price;
+}
+
+const cartStore = useCartStore();
+
+function toggleFavorite(cardId) {
+  cartStore.toggleFavorite(cardId);
+}
+
+function toggleInCart(cardId) {
+  cartStore.toggleInCart(cardId);
+}
+
+watch(
+    [
+      () => cartStore.cards.find(card => card.id === props.id)?.favorite,
+      () => cartStore.cards.find(card => card.id === props.id)?.incart
+    ],
+    ([newFavorite, newInCart]) => {
+      if (newFavorite !== undefined) {
+        isFavorite.value = newFavorite;
+      }
+      if (newInCart !== undefined) {
+        inCart.value = newInCart;
+      }
+    },
+    { immediate: true }
+);
+
 
 </script>
 
@@ -34,20 +74,20 @@ const isFavorite = ref(props.favorite);
     </div>
     <div class="card__text-content">
       <h3 class="card__title">
-        Foxxx Kitsune Mini Black Vintage RCA
+        {{ title }}
       </h3>
-      <span class="card__price">6 000 ₽ </span>
+      <span class="card__price">{{ formatPrice(price) }} ₽ </span>
     </div>
     <div v-if="new" class="card__label">
       <span class="card__label-text">
           Новинка
       </span>
     </div>
-    <div :class="{ active: isFavorite }" class="card__favorites" @click="isFavorite =!isFavorite">
+    <div :class="{ active: isFavorite }" class="card__favorites" @click="toggleFavorite(id)">
       <svg-heart/>
     </div>
-    <button class="card__button">
-      Добавить в корзину
+    <button @click="toggleInCart(id)" class="card__button">
+      {{ inCart ? 'В корзине' : 'Добавить в корзину' }}
     </button>
   </div>
 </template>

@@ -9,9 +9,9 @@
         <h2 class="hero__title">Лучшие товары в мире татуировок</h2>
         <p class="hero__description">Оборудование и расходники для&nbsp;самых&nbsp;ярких&nbsp;и&nbsp;качественных&nbsp;работ
         </p>
-        <a href="javascript:void(0);" class="hero__button">
+        <router-link to="/catalog" class="hero__button">
           Смотреть каталог
-        </a>
+        </router-link>
 
       </div>
     </div>
