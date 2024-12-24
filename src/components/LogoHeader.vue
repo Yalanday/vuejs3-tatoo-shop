@@ -3,12 +3,14 @@
 
 <template>
   <div class="header__logo">
-    <img src="../../../public/logo.svg"/>
+    <router-link to="/">
+      <img src="../../../public/logo.svg"/>
+    </router-link>
   </div>
 </template>
 
 <style scoped>
-  .header__logo {
-    cursor: pointer;
-  }
+.header__logo {
+  cursor: pointer;
+}
 </style>

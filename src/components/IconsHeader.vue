@@ -1,15 +1,34 @@
 <script setup>
+import {cards} from "../mocks/mocks.js";
+import {useCartStore} from "../stores/cardsStore.js";
+import {onMounted, ref, watch} from "vue";
+
+const cartStore = useCartStore();
+const favoritesCount = ref(cartStore.favoritesCount);
+const sumInCart = ref(cartStore.sumInCart);
+
+watch(
+    [() => cartStore.favoritesCount, () => cartStore.sumInCart],
+    ([newCount, newSum]) => {
+      favoritesCount.value = newCount;
+      sumInCart.value = newSum;
+    },
+    { immediate: true }
+);
 
 </script>
 
 <template>
   <div class="header__icons">
-    <div class="header__icon icon-cart">
-      <span class="header__cart-sum">37 280 ₽</span>
-      <span class="header__icon-bg icon-cart__bg"></span>
-    </div>
+    <router-link to="/cart">
+      <div class="header__icon icon-cart">
+        <span class="header__cart-sum">{{ sumInCart }} ₽</span>
+        <span class="header__icon-bg icon-cart__bg"></span>
+      </div>
+    </router-link>
     <div class="header__icon icon-favorites">
       <span class="header__icon-bg icon-favorites__bg"></span>
+      <span v-if="favoritesCount > 0" class="icon-favorites__count">{{ favoritesCount }}</span>
     </div>
     <div class="header__icon icon-user">
       <span class="header__icon-bg icon-user__bg"></span>
@@ -60,8 +79,29 @@
 }
 
 .icon-favorites__bg {
+
   -webkit-mask: url(../assets/icons/favorites.svg) no-repeat center;
   mask: url(../assets/icons/favorites.svg) no-repeat center;
+}
+
+.icon-favorites {
+  position: relative;
+}
+
+.icon-favorites__count {
+  position: absolute;
+  right: -8px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #bb8c5f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .icon-user__bg {
